@@ -1,9 +1,11 @@
+import os
+os.system("pip install pillow qrcode")
 from PIL import Image,ImageDraw
 import qrcode
-import os
 print("Enter Your Name=")
 name=input()
-#os.mkdir(name)
+os.mkdir(name)
+os.chdir(name)
 print("How many qrcode you want to genarate?")
 num=int(input())
 for i in range(num):
